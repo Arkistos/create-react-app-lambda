@@ -98,14 +98,14 @@ export default class Versets extends React.Component{
             <h1>Découvre le verset caché</h1>
 
             <div id="ref-zone">
-                {this.state.refOrText !=0 && <p>{this.state.displayRef}</p>}
+                {this.state.refOrText !==0 && <p>{this.state.displayRef}</p>}
             </div>
             <div id="verse-zone">
-                {this.state.refOrText !=1 && <p>{this.state.displayText}</p>}
+                {this.state.refOrText !==1 && <p>{this.state.displayText}</p>}
             </div>
 
             <div id='buttons'>
-                {this.state.refOrText == 2?
+                {this.state.refOrText === 2?
                     <button className="button" id='button-next' onClick={this.draw}>Verset Suivant</button>
                 :
                     <button className="button" id='button-response' onClick={this.reveal}> Réponse</button>
